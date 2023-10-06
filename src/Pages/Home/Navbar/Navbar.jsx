@@ -10,7 +10,7 @@ const Navbar = () => {
             <NavLink to="/services">Services</NavLink>
           </li>
           <li>
-            <NavLink to="/aboutUs">Team</NavLink>
+            <NavLink to="/team">Team</NavLink>
           </li>
           <li>
             <NavLink to="/aboutUs">About us</NavLink>
@@ -44,7 +44,7 @@ const Navbar = () => {
                 {navLinks}
               </ul>
             </div>
-            <h2 className="text-3xl font-semibold">Social Events</h2>
+            <h2 className="text-3xl font-semibold">Social <span className="text-[#ff9318cc]">Events</span></h2>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">{navLinks}</ul>
@@ -60,7 +60,7 @@ const Navbar = () => {
               <button onClick={handleLogOut} className="btn">Log out</button>
               : */}
               <Link to='/login'>
-              <button className="btn">Login</button>
+              <button className="btn bg-[#ff9318cc] hover:bg-[#b57e3f]">Login</button>
               </Link>
             {/* } */}
           </div>

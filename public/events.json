@@ -1,35 +1,41 @@
 [
     {
+      "id": 1,
       "name": "Birthday event",
       "image": "https://i.ibb.co/ZLtFWGk/Birthday.webp",
       "price": 20.99,
       "description": "Celebrate your special day with friends and family! Whether you're turning one or one hundred, a birthday event is the perfect way to mark the occasion. From balloons and streamers to cake and ice cream, we've got everything you need to make your birthday party a success. Choose from a variety of themes and decorations to create a personalized experience that reflects your unique style. Don't forget to capture all the memories with our photo booth rental service! Contact us today to start planning your birthday event."
     },
     {
+      "id": 2,
       "name": "Wedding event",
       "image": "https://i.ibb.co/Jq4jHSV/Wedding.jpg",
       "price": 60.99,
       "description": "Join us as we celebrate the union of two hearts! A wedding event is a once-in-a-lifetime occasion that deserves to be celebrated in style. From elegant ballrooms to scenic outdoor venues, we offer a wide range of options to suit your preferences. Our team of experienced planners will work with you every step of the way to ensure that your wedding is everything you've ever dreamed of. From the flowers and music to the food and drinks, we'll take care of every detail so you can focus on enjoying your special day. Contact us today to start planning your wedding event."
     },
     {
+      "id": 3,
       "name": "Anniversary event",
       "image": "https://i.ibb.co/68dYLr6/anniversary.jpg",
       "price": 30.99,
       "description": "Celebrate another year of love and togetherness! An anniversary event is the perfect way to honor your commitment to each other and reflect on all the wonderful memories you've shared. Whether it's your first anniversary or your fiftieth, we'll help you create an unforgettable experience that celebrates your love story. From romantic dinners to weekend getaways, we offer a variety of options to suit your preferences. Let us help you plan an anniversary event that you'll cherish for years to come. Contact us today to get started."
     },
     {
+      "id": 4,
       "name": "Engagement event",
       "image": "https://i.ibb.co/GVfBrBV/angagement.webp",
       "price": 40.99,
       "description": "Join us as we celebrate our engagement! An engagement event is a special occasion that marks the beginning of a new chapter in your life. Whether you're planning an intimate gathering or a grand celebration, we'll help you create an unforgettable experience that reflects your unique style. From engagement photoshoots to engagement parties, we offer a variety of services to suit your needs. Let us help you plan an engagement event that you'll remember for years to come. Contact us today to get started."
     },
     {
+      "id": 5,
       "name": "Holiday party",
       "image": "https://i.ibb.co/D578fpb/Holiday-Party.webp",
       "price": 40.99,
       "description": "Celebrate the season with good food, drinks, and company! A holiday party is the perfect way to spread cheer and connect with loved ones during the festive season. From ugly sweater parties to formal dinners, we offer a variety of options to suit your preferences. Our team of experienced planners will work with you every step of the way to ensure that your holiday party is everything you've ever dreamed of. From the decorations and music to the food and drinks, we'll take care of every detail so you can focus on enjoying the festivities. Contact us today to start planning your holiday party."
     },
     {
+      "id": 6,
       "name": "Retirement Parties",
       "image": "https://i.ibb.co/H7fvNPF/retirement.jpg",
       "price": 20.99,
