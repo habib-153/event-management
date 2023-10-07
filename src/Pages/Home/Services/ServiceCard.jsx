@@ -2,8 +2,11 @@
 
 import { Link } from "react-router-dom";
 
+
 const ServiceCard = ({ service }) => {
   const { name, id, image, price, description } = service;
+
+  
   return (
     <div className="rounded-lg shadow-lg p-4 border mb-4 card space-y-3 bg-base-200 ">
       <figure className="w-full h-[170px]">
@@ -22,8 +25,8 @@ const ServiceCard = ({ service }) => {
         </div>
         
           <div className="flex items-center justify-between relative">
-            <Link to={`/service/${id}`}>
-              <button className="btn text-[#FFFF] text-lg  bg-[#ff9318cc] hover:bg-[#8f5615]">
+            <Link service={service} to={`/service/${id}`}>
+              <button  className="btn text-[#FFFF] text-lg  bg-[#ff9318cc] hover:bg-[#8f5615]">
                 View Details
               </button>
             </Link>

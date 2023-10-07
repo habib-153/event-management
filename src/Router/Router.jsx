@@ -5,6 +5,9 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Error from "../Pages/ErroElemnt/Error";
 import Services from "../Pages/Home/Services/Services";
+import Team from "../Pages/Team/Team";
+import HomeAbout from "../Pages/Home/HomeAbout";
+import ServiceDetails from "../Pages/Home/Services/ServiceDetails";
 
 const Router = createBrowserRouter([
     {
@@ -15,7 +18,7 @@ const Router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: () => fetch('events.json')
+                loader: () => fetch('events.json'),
             },
             {
                 path: "/services",
@@ -23,15 +26,21 @@ const Router = createBrowserRouter([
                 loader: () => fetch('events.json')
             },
             {
-                path: "/team",
-                element: <Home></Home>
+                path: "/service/:id",
+                element: <ServiceDetails></ServiceDetails>,
+                loader: () => fetch('events.json')
             },
             {
                 path: "/team",
-                element: <Home></Home>
+                element: <Team></Team>,
+                loader: () => fetch("team.json")
             },
             {
                 path: "/aboutUs",
+                element: <HomeAbout></HomeAbout>
+            },
+            {
+                path: "/login",
                 element: <Login></Login>
             },
             {

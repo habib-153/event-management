@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "name": "James Smith",
+      "title": "Supervisor",
+      "image": "https://i.ibb.co/gSVfbDC/James-Smith.jpg",
+      "description": "Company supervisors manage the workflow of their team or department by assigning tasks, supporting staff, monitoring results and reporting to senior management."
+    },
+    {
+      "id": 2,
+      "name": "Robert Taylor",
+      "title": "Founder & Director",
+      "image": "https://i.ibb.co/fYVctNd/Robert-taylor.jpg",
+      "description": "Company directors oversee the strategic direction and performance of a company. They set the vision, mission and goals, and ensure compliance with legal and ethical standards."
+    },
+    {
+      "id": 3,
+      "name": "Tanzid Hasan",
+      "title": "Events Manager",
+      "image": "https://i.ibb.co/wQVPXkF/tanzid-hasan.jpg",
+      "description": "Event managers plan and execute various types of events for their clients or employers. They handle the budget, logistics, marketing and evaluation of the events."
+    },
+    {
+      "id": 4,
+      "name": "Kethy Taylor",
+      "title": "Events Manager",
+      "image": "https://i.ibb.co/82K7hLy/Kethy-Taylor.jpg",
+      "description": "Event managers plan and execute various types of events for their clients or employers. They handle the budget, logistics, marketing and evaluation of the events."
+    }
+  ]
