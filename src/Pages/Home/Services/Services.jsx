@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard";
 const Services = () => {
     const Services = useLoaderData()
     return (
-        <div className="mt-5 bg-[#1111111b] text-center">
+        <div className="mt-5 md:p-10 bg-[#1111111b] text-center">
             <div className="pt-4 md:pt-8 lg:pt-14 space-y-4 lg:max-w-4xl mx-auto">
                 <h2 className="text-5xl font-semibold ">Our <span className="text-[#ff9318cc] font-bold">Services</span></h2>
                 <p className="text-xl font-medium">We make your events smart & impactful by personalised event management services</p>

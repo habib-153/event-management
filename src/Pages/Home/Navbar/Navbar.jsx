@@ -18,7 +18,7 @@ const Navbar = () => {
         </>
       );
       return (
-        <div className="navbar bg-base-100">
+        <div className=" navbar bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -60,7 +60,7 @@ const Navbar = () => {
               <button onClick={handleLogOut} className="btn">Log out</button>
               : */}
               <Link to='/login'>
-              <button className="btn bg-[#ff9318cc] hover:bg-[#b57e3f]">Login</button>
+              <button className="btn text-white bg-[#ff9318cc] hover:bg-[#b57e3f]">Login</button>
               </Link>
             {/* } */}
           </div>

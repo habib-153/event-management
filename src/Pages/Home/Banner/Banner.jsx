@@ -14,14 +14,14 @@ export default class SimpleSlider extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: 1,
+      arrows: false
     };
     return (
       <div>
         <Slider {...settings}>
           <div className="relative">
             <div className="absolute w-full h-full  text-center bg-[#11111173]">
-              <h3 className="w-full text-[#FFF] relative top-[50%] md:w-[80%] mx-auto text-5xl font-semibold">CELEBRATE YOUR EVENTs  THAT
+              <h3 className="w-full text-[#FFF] relative top-[50%] md:w-[80%] mx-auto text-2xl md:text-5xl font-semibold">CELEBRATE YOUR EVENTs  THAT
                 LASTS LONGER
               </h3>
             </div>
