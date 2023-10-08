@@ -11,16 +11,48 @@ const Navbar = () => {
     const navLinks = (
         <>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/"
+            className={({ isActive, isPending }) =>
+            isActive
+              ? "text-[#ff9318cc] hover:text-[#ff9318cc] underline font-bold"
+              : isPending
+              ? "pending"
+              : ""
+          }
+            >Home</NavLink>
           </li>
           <li>
-            <NavLink to="/services">Services</NavLink>
+            <NavLink to="/services"
+            className={({ isActive, isPending }) =>
+            isActive
+              ? "text-[#ff9318cc] hover:text-[#ff9318cc] underline font-bold"
+              : isPending
+              ? "pending"
+              : ""
+          }
+            >Services</NavLink>
           </li>
           <li>
-            <NavLink to="/team">Team</NavLink>
+            <NavLink to="/team"
+            className={({ isActive, isPending }) =>
+            isActive
+              ? "text-[#ff9318cc] hover:text-[#ff9318cc] underline font-bold"
+              : isPending
+              ? "pending"
+              : ""
+          }
+            >Team</NavLink>
           </li>
           <li>
-            <NavLink to="/aboutUs">About us</NavLink>
+            <NavLink to="/aboutUs"
+            className={({ isActive, isPending }) =>
+            isActive
+              ? "text-[#ff9318cc] hover:text-[#ff9318cc] underline font-bold"
+              : isPending
+              ? "pending"
+              : ""
+          }
+            >About us</NavLink>
           </li>
         </>
       );
@@ -46,7 +78,7 @@ const Navbar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                className="menu font-semibold menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
                 {navLinks}
               </ul>
@@ -54,7 +86,7 @@ const Navbar = () => {
             <h2 className="text-3xl font-semibold">Social <span className="text-[#ff9318cc]">Events</span></h2>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+            <ul className="menu font-semibold menu-horizontal px-1">{navLinks}</ul>
           </div>
           <div className="navbar-end">
            {user &&

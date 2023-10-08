@@ -3,7 +3,7 @@
 const Member = ({ member }) => {
   const { name, image, title, description } = member;
   return (
-    <div className="rounded-lg grid grid-cols-1 lg:grid-cols-2 lg:items-center lg:gap-4 shadow-lg p-4 border mb-4 card space-y-3 bg-base-200 ">
+    <div data-aos="flip-up" className="rounded-lg grid grid-cols-1 lg:grid-cols-2 lg:items-center lg:gap-4 shadow-lg p-4 border mb-4 card space-y-3 bg-base-200 ">
       <figure className="max-w-[400px] h-[225px]">
         <img src={image} alt="img" className=" rounded-lg w-full h-full" />
       </figure>

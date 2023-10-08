@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const Register = () => {
     const { createUser, handleUpdateProfile } = useContext(AuthContext)
-
+    const navigate = useNavigate()
     const handleRegister = e =>{
         e.preventDefault();
         const form = new FormData(e.currentTarget);
@@ -14,13 +15,27 @@ const Register = () => {
         const password = form.get('password')
         console.log(name, photo, email, password);
 
+        if(password.length < 6){
+          toast.error('Password should be at 6 characters or longer');
+          return
+      }
+      else if(!/[A-Z]/.test(password)){
+        toast.error('Your password should have at least one Uppercase Character and a Special Character');
+          return;
+      }
+
         createUser(email, password)
-        .then(res=>{
-            console.log(res.user)
+        .then((res) => {
+          console.log(res.user)
+          toast.success("Registration successful")
+    
+          // navigate after login
+          navigate('/')
         })
-        .catch(err =>{
-            console.error(err)
-        })
+        .catch((err) => {
+          console.error(err);
+          toast.error(err.message)
+        });
         handleUpdateProfile(name, photo)
         .then(()=>{
           console.log("updated")

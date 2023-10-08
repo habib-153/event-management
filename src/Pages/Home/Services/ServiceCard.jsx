@@ -8,7 +8,7 @@ const ServiceCard = ({ service }) => {
 
   
   return (
-    <div className="rounded-lg shadow-lg p-4 border mb-4 card space-y-3 bg-base-200 ">
+    <div data-aos="fade-up" className="rounded-lg shadow-lg p-4 border mb-4 card space-y-3 bg-base-200 ">
       <figure className="w-full h-[170px]">
         <img src={image} alt="img" className=" w-full h-full" />
       </figure>

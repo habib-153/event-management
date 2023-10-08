@@ -3,10 +3,11 @@ import { IoIosPeople } from "react-icons/io";
 
 const HomeAbout = () => {
   return (
-    <div className=" md:px-10 py-6 bg-[#1111111b] text-center">
+    <div className="px-8 md:px-10 py-6 bg-[#1111111b] text-center">
       <div className="pt-4  space-y-4 lg:max-w-4xl mx-auto">
         <h2 className="text-5xl font-semibold ">
-          We <span className="text-[#ff9318cc] font-bold">Create Events </span>
+          We <span  data-aos="fade-up"
+     data-aos-anchor-placement="top-center" className="text-[#ff9318cc] font-bold">Create Events </span>
           That Lasts
         </h2>
         <p className="text-xl font-medium">

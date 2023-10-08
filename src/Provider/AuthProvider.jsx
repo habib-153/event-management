@@ -3,7 +3,10 @@
 import { createContext, useEffect, useState } from "react";
 import {  GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import auth from "../Firebase/Firebase.config";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export const AuthContext = createContext(null)
 

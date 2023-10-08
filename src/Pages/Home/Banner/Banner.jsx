@@ -17,7 +17,7 @@ export default class SimpleSlider extends Component {
       arrows: false
     };
     return (
-      <div>
+      <div data-aos="fade-in">
         <Slider {...settings}>
           <div className="relative">
             <div className="absolute w-full h-full  text-center bg-[#11111173]">

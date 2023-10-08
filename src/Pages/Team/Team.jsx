@@ -11,9 +11,9 @@ const Team = () => {
         .then(data=>setTeamMembers(data))
     },[])
     return (
-        <div className=" md:p-10 bg-[#1111111b] text-center">
+        <div className="px-8 md:p-10 bg-[#1111111b] text-center">
             <div className="pt-4  space-y-4 lg:max-w-4xl mx-auto">
-                <h2 className="text-5xl font-semibold ">Our <span className="text-[#ff9318cc] font-bold">Team Members</span></h2>
+                <h2 className="text-5xl font-semibold ">Our <span data-aos="zoom-in-down" className="text-[#ff9318cc] font-bold">Team Members</span></h2>
                 <p className="text-xl font-medium">We make your events smart & impactful by personalised event management services</p>
             </div>
             <div className="grid md:grid-cols-2  mt-8 gap-4">

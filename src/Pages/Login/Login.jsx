@@ -1,13 +1,25 @@
 import { FcGoogle } from 'react-icons/fc'
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import toast from 'react-hot-toast';
 
 const Login = () => {
   const { signIn, googleLogin } = useContext(AuthContext);
-  
+  const navigate = useNavigate()
   const handleGoogleLogin =()=>{
     googleLogin()
+    .then((res) => {
+      console.log(res.user)
+      toast.success("Login successful")
+
+      // navigate after login
+      navigate('/')
+    })
+    .catch((err) => {
+      console.error(err);
+      toast.error(err.message)
+    });
   }
   const handleLogin = (e) => {
     e.preventDefault();
@@ -18,13 +30,15 @@ const Login = () => {
 
     signIn(email, password)
       .then((res) => {
-        console.log(res.user);
+        console.log(res.user)
+        toast.success("Login successful")
 
         // navigate after login
-        //navigate(location?.state? location.state : '/')
+        navigate('/')
       })
       .catch((err) => {
         console.error(err);
+        toast.error(err.message)
       });
   };
   return (
