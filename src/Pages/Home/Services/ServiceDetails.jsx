@@ -4,16 +4,17 @@ import { saveEvent } from "../../../Utility/LocalStorage";
 
 
 
+
 const ServiceDetails = () => {
-    const services = useLoaderData()
     
+    const services = useLoaderData()
     
     const {id} = useParams();
     const idInt = parseInt(id);
     const service = services.find(service => service.id === idInt)
     saveEvent(service)
     console.log(service);
-
+    
     const handleSave = () => {
         saveEvent(idInt);
         //toast("Thanks For Your Donation")
