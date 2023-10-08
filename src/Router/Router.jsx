@@ -9,6 +9,8 @@ import Team from "../Pages/Team/Team";
 import HomeAbout from "../Pages/Home/HomeAbout";
 import ServiceDetails from "../Pages/Home/Services/ServiceDetails";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import JoinUs from "../Pages/JoinUs/JoinUs";
 
 const Router = createBrowserRouter([
     {
@@ -19,12 +21,12 @@ const Router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: () => fetch('events.json'),
+                loader: () => fetch('/events.json'),
             },
             {
                 path: "/services",
                 element: <Services></Services>,
-                loader: () => fetch('events.json')
+                loader: () => fetch('/events.json')
             },
             {
                 path: "/service/:id",
@@ -37,7 +39,23 @@ const Router = createBrowserRouter([
             {
                 path: "/team",
                 element: <Team></Team>,
-                loader: () => fetch("team.json")
+                loader: () => fetch("/team.json")
+            },
+            {
+                path: "/dashboard",
+                element: 
+                <PrivateRoute>
+                    <Dashboard></Dashboard>
+                </PrivateRoute>,
+                loader: () => fetch("/events.json")
+            },
+            {
+                path: "/joinUs",
+                element: 
+                <PrivateRoute>
+                   <JoinUs></JoinUs>
+                </PrivateRoute>,
+                loader: () => fetch("/team.json")
             },
             {
                 path: "/aboutUs",

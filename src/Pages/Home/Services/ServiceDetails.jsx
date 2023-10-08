@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useLoaderData, useParams } from "react-router-dom";
 import { saveEvent } from "../../../Utility/LocalStorage";
+import toast from "react-hot-toast";
 
 
 
@@ -17,7 +18,7 @@ const ServiceDetails = () => {
     
     const handleSave = () => {
         saveEvent(idInt);
-        //toast("Thanks For Your Donation")
+        toast.success("Thanks For Your Booking")
     }
     return (
         <div>

@@ -43,6 +43,34 @@ const Navbar = () => {
           }
             >Team</NavLink>
           </li>
+          {
+            user &&
+            <li>
+            <NavLink to="/dashboard"
+            className={({ isActive, isPending }) =>
+            isActive
+              ? "text-[#ff9318cc] hover:text-[#ff9318cc] underline font-bold"
+              : isPending
+              ? "pending"
+              : ""
+          }
+            >DashBoard</NavLink>
+          </li>
+          }
+          {
+            user &&
+            <li>
+            <NavLink to="/joinUs"
+            className={({ isActive, isPending }) =>
+            isActive
+              ? "text-[#ff9318cc] hover:text-[#ff9318cc] underline font-bold"
+              : isPending
+              ? "pending"
+              : ""
+          }
+            >Join Us</NavLink>
+          </li>
+          }
           <li>
             <NavLink to="/aboutUs"
             className={({ isActive, isPending }) =>
